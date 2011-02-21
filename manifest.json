@@ -1,0 +1,15 @@
+{
+	"name": "Expense sharing",
+	"version": "1",
+	"description": "A useful tool to figure out how much money who owes whom.",
+	"app": {
+		"launch": {
+			"local_path": "app.html"
+		}
+	},
+	"icons": {
+		"16": "img/16.png",
+		"48": "img/48.png",
+		"128": "img/128.png"
+	}
+}

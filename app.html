@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<title>Expense sharing</title>
+	<meta charset="utf-8">
+	<link rel=stylesheet href="resources/common.css">
+	<link rel=stylesheet href="resources/jquery.autocomplete.css">
+	<link rel=stylesheet href="app/layout.css">
+	<link rel=stylesheet href="app/forms.css">
+	<link rel=stylesheet href="app/function.css">
+
+	<header>
+		<h1>Expense sharing</h1>
+	</header>
+
+	<article>
+		<h2>Expenses</h2>
+		<ul id="expenses">
+			<li class="new">
+				<p>
+					<input class="buyer participant" tabindex=5 placeholder="John">
+					has bought
+					<input class="item" tabindex=5 placeholder="food">
+					for
+					$<input class="price" tabindex=5 placeholder="10"
+						type=number min="0">.
+				</p>
+			</li>
+		</ul>
+
+		<label>
+			<h2>Other participants</h2>
+			<p>
+				<textarea id="participants" rows="5" cols="50" tabindex=5
+					class=participant placeholder="me, Kate, Michael, Scarlet"></textarea>
+			</p>
+		</label>
+
+		<section id="payday" class="inactive">
+			<h2>Payday</h2>
+			<ul>
+				<li class="new owes">
+					<span class="person"></span>
+					should pay
+					$<span class="amount"></span>.
+				</li>
+				<li class="new owed">
+					<span class="person"></span>
+					should receive
+					$<span class="amount"></span>.
+				</li>
+				<li class="new balanced">
+					<span class="person"></span>
+					can just leave, it's fine.
+					<span class="amount"></span>
+				</li>
+			</ul>
+		</section>
+	</article>
+
+
+	<script src="resources/jquery-1.4.4.min.js"></script>
+	<script src="resources/javascript.js"></script>
+	<script src="resources/jquery.autocomplete.min.js"></script>
+	<script src="app/init.js"></script>
